@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music-player</title>
+    <script
+      src="https://kit.fontawesome.com/72f0c5d220.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <img id="song-img" src="simage.png" alt="image" />
+        <h1 id="songName">SongName</h1>
+        <p id="artistName">Artist name</p>
+        <audio id="song">
+          <source src="bgm.mp3" />
+        </audio>
+        <input type="range" value="0.00" id="progress" />
+        <div class="controls">
+          <div onclick="playPrevious()">
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div onclick="playNext()">
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
