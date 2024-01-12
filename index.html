@@ -13,13 +13,17 @@
   <body>
     <div class="container">
       <div class="music-player">
-        <img id="song-img" src="simage.png" alt="image" />
+        <img id="song-img" src="images/simage.png" alt="image" />
         <h1 id="songName">SongName</h1>
         <p id="artistName">Artist name</p>
         <audio id="song">
-          <source src="bgm.mp3" />
+          <source src="Music/bgm.mp3" />
         </audio>
-        <input type="range" value="0.00" id="progress" />
+        <!-- Add a container for the progress bar and total duration -->
+        <div class="progress-container">
+          <input type="range" value="0.00" id="progress" />
+        </div>
+
         <div class="controls">
           <div onclick="playPrevious()">
             <i class="fa-solid fa-backward"></i>
